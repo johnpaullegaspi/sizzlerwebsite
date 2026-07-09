@@ -1,0 +1,102 @@
+{
+  "signature": [
+    {
+      "name": "Sizzlers Signature Ribeye 16oz",
+      "description": "Charred, dry-aged, garlic butter",
+      "price": "$58",
+      "image": "https://images.unsplash.com/photo-1682566509605-b5bb1ef7eac2?q=80&w=800&auto=format&fit=crop",
+      "alt": "Sizzlers Signature Ribeye, 16oz dry-aged steak with garlic butter"
+    },
+    {
+      "name": "Black Truffle Fettuccine",
+      "description": "House-made pasta, wild mushrooms",
+      "price": "$24",
+      "image": "https://images.unsplash.com/photo-1755677617146-9d69ea16b199?q=80&w=800&auto=format&fit=crop",
+      "alt": "Black truffle fettuccine with wild mushrooms and shaved truffle"
+    },
+    {
+      "name": "Smoked Gouda Wagyu Burger",
+      "description": "Brioche, caramelized onion",
+      "price": "$32",
+      "image": "https://images.unsplash.com/photo-1572448862527-d3c904757de6?q=80&w=800&auto=format&fit=crop",
+      "alt": "Smoked gouda wagyu burger on a brioche bun with caramelized onion"
+    },
+    {
+      "name": "Cast-Iron Seared Salmon",
+      "description": "Lemon beurre blanc",
+      "price": "$34",
+      "image": "https://images.unsplash.com/photo-1712334562767-5d366d0c40d9?q=80&w=800&auto=format&fit=crop",
+      "alt": "Cast-iron seared salmon fillet with lemon beurre blanc and vegetables"
+    },
+    {
+      "name": "Lobster Mac & Cheese",
+      "description": "Five-cheese blend",
+      "price": "$28",
+      "image": "https://images.unsplash.com/photo-1707528904014-658b4c068ec5?q=80&w=800&auto=format&fit=crop",
+      "alt": "Lobster mac and cheese with a five-cheese blend, plated and garnished"
+    },
+    {
+      "name": "Sizzlers Old Fashioned",
+      "description": "Smoked, barrel-aged",
+      "price": "$16",
+      "image": "https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?q=80&w=800&auto=format&fit=crop",
+      "alt": "Sizzlers Old Fashioned cocktail, smoked and barrel-aged, in a rocks glass"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Starters",
+      "items": [
+        { "name": "Charred Octopus", "description": "Smoked paprika, fingerling potato, chimichurri", "price": "$22" },
+        { "name": "Tuna Tartare", "description": "Avocado, sesame-soy, crisp wonton", "price": "$19" },
+        { "name": "Burrata & Heirloom Tomato", "description": "Basil oil, aged balsamic, sourdough crostini", "price": "$18" },
+        { "name": "French Onion Soup", "description": "Gruyère crust, brioche", "price": "$14" }
+      ]
+    },
+    {
+      "name": "From the Grill",
+      "items": [
+        { "name": "Sizzlers Signature Ribeye 16oz", "description": "Charred, dry-aged, garlic butter", "price": "$58" },
+        { "name": "Dry-Aged New York Strip 14oz", "description": "28-day aged, black pepper crust", "price": "$52" },
+        { "name": "Filet Mignon 8oz", "description": "Red wine jus, roasted bone marrow", "price": "$54" },
+        { "name": "Tomahawk for Two 32oz", "description": "Herb butter, chimichurri, table-side sear", "price": "$128" },
+        { "name": "Smoked Gouda Wagyu Burger", "description": "Brioche, caramelized onion", "price": "$32" }
+      ]
+    },
+    {
+      "name": "Handmade Pasta & Seafood",
+      "items": [
+        { "name": "Black Truffle Fettuccine", "description": "House-made pasta, wild mushrooms", "price": "$24" },
+        { "name": "Cast-Iron Seared Salmon", "description": "Lemon beurre blanc", "price": "$34" },
+        { "name": "Lobster Mac & Cheese", "description": "Five-cheese blend", "price": "$28" },
+        { "name": "Pan-Seared Scallops", "description": "Cauliflower purée, brown butter, crispy pancetta", "price": "$36" }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        { "name": "Truffle Parmesan Fries", "description": "", "price": "$12" },
+        { "name": "Charred Broccolini", "description": "Chili, garlic, lemon", "price": "$11" },
+        { "name": "Loaded Mashed Potatoes", "description": "Bacon, chive, cheddar", "price": "$11" },
+        { "name": "Creamed Spinach", "description": "", "price": "$10" }
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        { "name": "Smoked Chocolate Lava Cake", "description": "Vanilla bean ice cream", "price": "$14" },
+        { "name": "Bourbon Bread Pudding", "description": "Salted caramel, whipped cream", "price": "$13" },
+        { "name": "New York Cheesecake", "description": "Berry compote", "price": "$12" }
+      ]
+    },
+    {
+      "name": "Craft Cocktails",
+      "items": [
+        { "name": "Sizzlers Old Fashioned", "description": "Smoked, barrel-aged", "price": "$16" },
+        { "name": "Charred Rosemary Negroni", "description": "", "price": "$15" },
+        { "name": "Smoked Manhattan", "description": "", "price": "$16" },
+        { "name": "Sizzlers Espresso Martini", "description": "", "price": "$15" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "testimonials": [
+    {
+      "quote": "Best steak I've had in Manila. The sizzle when it hit the table said it all.",
+      "name": "Maria L.",
+      "location": "Makati, Manila",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+    },
+    {
+      "quote": "The truffle fettuccine is worth the trip alone — and the Old Fashioned might be the best in the city.",
+      "name": "Daniel R.",
+      "location": "BGC, Taguig",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+    },
+    {
+      "quote": "Warm, elegant, and the wagyu burger genuinely stopped our conversation. We booked our next visit before we even left.",
+      "name": "Angela T.",
+      "location": "Ortigas, Pasig",
+      "avatar": "https://images.unsplash.com/photo-1562337404-3044c84ac061?q=80&w=200&auto=format&fit=crop"
+    }
+  ]
+}

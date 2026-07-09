@@ -1,0 +1,13 @@
+{
+  "name": "sizzlers-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sizzlers restaurant website — static site generated from JSON content editable via Decap CMS.",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node build.js && npx --yes http-server dist -p 8080"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "services": [
+    {
+      "icon": "private-dining",
+      "title": "Private Dining at Sizzlers",
+      "description": "Intimate rooms for celebrations, corporate dinners, and special occasions."
+    },
+    {
+      "icon": "catering",
+      "title": "Catering Available",
+      "description": "Sizzlers, delivered — full-service catering for events of every size."
+    },
+    {
+      "icon": "brunch",
+      "title": "Weekend Brunch",
+      "description": "A leisurely, indulgent brunch service every Sunday from 11AM."
+    }
+  ]
+}

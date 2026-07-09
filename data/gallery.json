@@ -1,0 +1,9 @@
+{
+  "gallery": [
+    { "image": "https://images.unsplash.com/photo-1776993298456-98c71c0e177e?q=80&w=700&auto=format&fit=crop", "alt": "Sizzlers elegant booth seating with warm ambient lighting" },
+    { "image": "https://images.unsplash.com/photo-1763771757330-3212b518e31c?q=80&w=700&auto=format&fit=crop", "alt": "Sizzlers bartender preparing craft cocktails behind the bar" },
+    { "image": "https://images.unsplash.com/photo-1556269923-e4ef51d69638?q=80&w=700&auto=format&fit=crop", "alt": "Close-up of a seared steak with rich char and sear marks" },
+    { "image": "https://images.unsplash.com/photo-1768697358705-c1b60333da35?q=80&w=700&auto=format&fit=crop", "alt": "Cozy Sizzlers dining area with elegant decor" },
+    { "image": "https://images.unsplash.com/photo-1641924676490-cd948c956b7e?q=80&w=700&auto=format&fit=crop", "alt": "A table set for two at Sizzlers with formal place settings" }
+  ]
+}

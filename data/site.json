@@ -1,0 +1,61 @@
+{
+  "brand": {
+    "name": "Sizzlers",
+    "tagline": "Modern American Classics, Served Hot"
+  },
+  "seo": {
+    "title": "Sizzlers | Modern American Steakhouse in Manila",
+    "description": "Sizzlers is an upscale American steakhouse in Manila serving dry-aged steaks, handmade pasta, and gourmet burgers with modern craft and warm hospitality. Modern American classics, served hot — reserve your table tonight.",
+    "site_url": "https://www.sizzlers.ph"
+  },
+  "hero": {
+    "eyebrow": "Upscale American Steakhouse · Manila",
+    "subhead": "Modern American Classics, Served Hot",
+    "background_image": "https://images.unsplash.com/photo-1741994246814-9caec2a78e07?q=80&w=2000&auto=format&fit=crop",
+    "background_alt": "Dry-aged ribeye steaks sizzling and searing on a hot grill",
+    "cta_reserve_label": "Reserve a Table",
+    "cta_menu_label": "View Menu"
+  },
+  "story": {
+    "label": "The Sizzlers Story",
+    "heading": "Fire, Flavor & Craft",
+    "image": "https://images.unsplash.com/photo-1663530761401-15eefb544889?q=80&w=1000&auto=format&fit=crop",
+    "image_alt": "Sizzlers chef finishing a plated steak with sauce in the kitchen",
+    "badge_text": "Est.\nManila",
+    "paragraphs": [
+      "At Sizzlers, every plate tells a story of fire, flavor, and craft. We take classic American favorites — dry-aged steaks, handmade pasta, and gourmet burgers — and elevate them with quality ingredients, bold technique, and a touch of indulgence.",
+      "From the first sizzle on the grill to the last bite of dessert, our mission is simple: create a dining experience so memorable, you'll already be planning your next visit."
+    ],
+    "button_label": "Learn More About Us"
+  },
+  "reservation_banner": {
+    "background_image": "https://images.unsplash.com/photo-1776993298422-3e8c397d0235?q=80&w=1800&auto=format&fit=crop",
+    "heading": "Experience Sizzlers Tonight",
+    "subtext": "Candlelight, cast-iron, and Modern American classics — served hot.",
+    "button_label": "Book Now"
+  },
+  "reservation": {
+    "opentable_url": "https://www.opentable.com/",
+    "note": "Prefer to book instantly? Connect your OpenTable or Resy account and this button will launch live availability."
+  },
+  "visit": {
+    "address": "88 Legazpi Street, Legazpi Village, Makati City, Metro Manila 1229, Philippines",
+    "phone_display": "+63 (2) 8123 4567",
+    "phone_link": "+6328123456",
+    "email": "hello@sizzlers.ph",
+    "map_query": "Legazpi Village, Makati, Metro Manila, Philippines",
+    "hours": [
+      { "label": "Monday – Thursday", "time": "5:00 PM – 10:00 PM" },
+      { "label": "Friday – Saturday", "time": "5:00 PM – 11:00 PM" },
+      { "label": "Sunday", "time": "11:00 AM – 9:00 PM" }
+    ],
+    "instagram_handle": "@sizzlersofficial",
+    "instagram_url": "https://www.instagram.com/sizzlersofficial"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/sizzlersofficial",
+    "facebook": "https://www.facebook.com/sizzlersofficial",
+    "tiktok": "https://www.tiktok.com/@sizzlersofficial"
+  },
+  "menu_pdf": "/menu.pdf"
+}

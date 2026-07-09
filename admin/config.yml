@@ -1,0 +1,181 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Editorial workflow adds a draft/review/publish step before changes go live.
+# Remove this line if you want edits to publish immediately on save.
+publish_mode: editorial_workflow
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+site_url: https://www.sizzlers.ph
+display_url: https://www.sizzlers.ph
+logo_url: /img/uploads/favicon.png
+
+locale: "en"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "Homepage & General Settings"
+        file: "data/site.json"
+        fields:
+          - label: "Brand"
+            name: "brand"
+            widget: object
+            fields:
+              - { label: "Restaurant Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+          - label: "SEO"
+            name: "seo"
+            widget: object
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+              - { label: "Live Site URL", name: "site_url", widget: "string", hint: "e.g. https://www.sizzlers.ph (no trailing slash)" }
+          - label: "Hero Section"
+            name: "hero"
+            widget: object
+            fields:
+              - { label: "Eyebrow text", name: "eyebrow", widget: "string" }
+              - { label: "Subheading", name: "subhead", widget: "string" }
+              - { label: "Background Photo", name: "background_image", widget: "image" }
+              - { label: "Background Photo Alt Text", name: "background_alt", widget: "string" }
+              - { label: '"Reserve" Button Label', name: "cta_reserve_label", widget: "string" }
+              - { label: '"View Menu" Button Label', name: "cta_menu_label", widget: "string" }
+          - label: "Our Story Section"
+            name: "story"
+            widget: object
+            fields:
+              - { label: "Small Label", name: "label", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Photo Alt Text", name: "image_alt", widget: "string" }
+              - { label: "Round Badge Text", name: "badge_text", widget: "string" }
+              - { label: "Paragraphs", name: "paragraphs", widget: "list", field: { label: "Paragraph", name: "text", widget: "text" } }
+              - { label: "Button Label", name: "button_label", widget: "string" }
+          - label: "Reservation Banner (full-width photo section)"
+            name: "reservation_banner"
+            widget: object
+            fields:
+              - { label: "Background Photo", name: "background_image", widget: "image" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              - { label: "Button Label", name: "button_label", widget: "string" }
+          - label: "Reservations"
+            name: "reservation"
+            widget: object
+            fields:
+              - { label: "OpenTable / Resy URL", name: "opentable_url", widget: "string" }
+              - { label: "Note under button", name: "note", widget: "text" }
+          - label: "Visit / Contact Info"
+            name: "visit"
+            widget: object
+            fields:
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Phone (displayed)", name: "phone_display", widget: "string" }
+              - { label: "Phone (for tel: links, digits only)", name: "phone_link", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Google Maps search text", name: "map_query", widget: "string" }
+              - label: "Hours"
+                name: "hours"
+                widget: list
+                fields:
+                  - { label: "Days", name: "label", widget: "string" }
+                  - { label: "Time", name: "time", widget: "string" }
+              - { label: "Instagram Handle (displayed)", name: "instagram_handle", widget: "string" }
+              - { label: "Instagram URL", name: "instagram_url", widget: "string" }
+          - label: "Social Links"
+            name: "social"
+            widget: object
+            fields:
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "Facebook", name: "facebook", widget: "string" }
+              - { label: "TikTok", name: "tiktok", widget: "string" }
+          - { label: "Menu PDF file", name: "menu_pdf", widget: "file" }
+
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu"
+        label: "Dishes & Drinks"
+        file: "data/menu.json"
+        fields:
+          - label: "Homepage Signature Dishes (exactly the ones shown on the homepage preview grid)"
+            name: "signature"
+            widget: list
+            summary: "{{name}} — {{price}}"
+            fields:
+              - { label: "Dish Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Photo Alt Text", name: "alt", widget: "string" }
+          - label: "Full Menu (menu.html page), organized by category"
+            name: "categories"
+            widget: list
+            summary: "{{name}}"
+            fields:
+              - { label: "Category Name", name: "name", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: list
+                summary: "{{name}} — {{price}}"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string", required: false }
+                  - { label: "Price", name: "price", widget: "string" }
+
+  - name: "testimonials"
+    label: "Guest Reviews"
+    files:
+      - name: "testimonials"
+        label: "Guest Reviews"
+        file: "data/testimonials.json"
+        fields:
+          - name: "testimonials"
+            label: "Reviews"
+            widget: list
+            summary: "{{name}}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Guest Name", name: "name", widget: "string" }
+              - { label: "Guest Location", name: "location", widget: "string" }
+              - { label: "Guest Photo", name: "avatar", widget: "image" }
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery Slider Photos"
+        file: "data/gallery.json"
+        fields:
+          - name: "gallery"
+            label: "Photos"
+            widget: list
+            summary: "{{alt}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Alt Text (describe the photo)", name: "alt", widget: "string" }
+
+  - name: "services"
+    label: "Services (Private Dining / Catering / Brunch)"
+    files:
+      - name: "services"
+        label: "Services"
+        file: "data/services.json"
+        fields:
+          - name: "services"
+            label: "Services"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - label: "Icon"
+                name: "icon"
+                widget: select
+                options: ["private-dining", "catering", "brunch"]
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
