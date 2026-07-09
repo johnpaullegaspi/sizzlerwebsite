@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Sizzlers Paul",
+    "name": "Sizzlers",
     "tagline": "Modern American Classics, Served Hot, Great Foodie to enjoy!"
   },
   "visit": {
@@ -8,7 +8,7 @@
     "phone_display": "+63 (2) 8123 4567",
     "phone_link": "+6328123456",
     "email": "hello@sizzlers.ph",
-    "map_query": "Iligan City, Lanao Del Norte, Philippines",
+    "map_query": "Legazpi Street, Legazpi Village, Makati City, Metro Manila",
     "hours": [
       {
         "label": "Monday – Thursday",
@@ -46,7 +46,7 @@
       "At Sizzlers, every plate tells a story of fire, flavor, and craft. We take classic American favorites — dry-aged steaks, handmade pasta, and gourmet burgers — and elevate them with quality ingredients, bold technique, and a touch of indulgence.",
       "From the first sizzle on the grill to the last bite of dessert, our mission is simple: create a dining experience so memorable, you'll already be planning your next visit. Johnpaul"
     ],
-    "button_label": "Learn More About Sizzlers - JP"
+    "button_label": "Learn More About Sizzlers"
   },
   "hero": {
     "eyebrow": "Upscale American Steakhouse · Manila",
