@@ -46,7 +46,9 @@ function nav(active) {
 <header class="site-nav${active === "menu" ? " scrolled" : ""}" id="site-nav">
   <div class="container">
     <a href="/" class="logo" aria-label="Sizzlers home">Sizzler<span class="flame">s</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
     <nav class="nav-links" aria-label="Primary">
       <a href="/#menu">Menu</a>
       <a href="/#story">Our Story</a>
@@ -56,7 +58,38 @@ function nav(active) {
       <a href="/#reserve" class="btn btn-gold">Reserve</a>
     </nav>
   </div>
-</header>`;
+</header>
+<div class="nav-backdrop" id="nav-backdrop"></div>
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <div class="mobile-drawer-head">
+    <a href="/" class="logo" aria-label="Sizzlers home">Sizzler<span class="flame">s</span></a>
+    <button type="button" class="drawer-close" id="drawer-close" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-links" aria-label="Mobile">
+    <a href="/#menu">Menu</a>
+    <a href="/#story">Our Story</a>
+    <a href="/#gallery">Gallery</a>
+    <a href="/#services">Private Dining</a>
+    <a href="/#visit">Contact</a>
+    <a href="/#reserve" class="btn btn-gold">Reserve a Table</a>
+  </nav>
+  <div class="drawer-footer">
+    <a href="tel:${esc(site.visit.phone_link)}" class="drawer-phone">${esc(site.visit.phone_display)}</a>
+    <div class="social-icons">
+      <a href="${esc(site.social.instagram)}" target="_blank" rel="noopener" aria-label="Sizzlers on Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a href="${esc(site.social.facebook)}" target="_blank" rel="noopener" aria-label="Sizzlers on Facebook">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v4h2v6h4v-6h2.5l.5-4H13V8a1 1 0 0 1 1-1h2V4Z"/></svg>
+      </a>
+      <a href="${esc(site.social.tiktok)}" target="_blank" rel="noopener" aria-label="Sizzlers on TikTok">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.5 2.5 2.2 4 5 4"/></svg>
+      </a>
+    </div>
+  </div>
+</div>`;
 }
 
 function footer() {
